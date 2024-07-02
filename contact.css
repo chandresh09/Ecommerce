@@ -1,0 +1,404 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+    border-bottom: 2px solid #ececec;
+    background-color: #ffffff;
+}
+.a-style {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left ul {
+    display: flex;
+}
+
+.nav-left ul li {
+    padding: 0px 20px;
+}
+.nav-right {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+.nav-right button {
+    background-color: red;
+    border: transparent;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.nav-right button a {
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+.contact-heading {
+    font-family: sans-serif;
+}
+.contact-blocks-container {
+    height: 500px;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact-blocks {
+    height: 450px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    background-color: white;
+    box-shadow: 1px 1px 5px #c6c6c6;
+    border-radius: 15px;
+}
+.contact-blocks h3 {
+    font-family: sans-serif;
+    padding: 30px 0px 10px 20px;
+}
+.contact-blocks ul,form {
+    font-family: system-ui;
+    line-height: 1.7rem;
+    padding: 0px 20px;
+}
+
+.inp {
+    height: 25px;
+    width: 100%;
+}
+.submit-btn {
+    background-color: red;
+    color: white;
+    border: transparent;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+.map-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.map-container iframe {
+    height: 400px;
+    width: 90%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+    padding: 30px 0px;
+}
+footer img {
+    height: 80px;
+}
+.footer-container {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-blocks {
+    height: 180px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    text-align: center;
+}
+.icon {
+    padding: 0px 10px;
+}
+.footer-blocks ul {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin-top: 10px;
+    color: #d6d6d6;
+}
+.footer-inp {
+    height: 23px;
+    width: 85%;
+    background-color: #d6d6d6;
+}
+.footer-inp-btn {
+    background-color: red;
+    color: white;
+    border: transparent;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 8px 15px;
+}
+
+
+@media screen and (max-width: 425.98px)
+{
+    nav {
+        height: 70px;
+    }
+    .nav-left {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-left ul {
+        font-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 15px;
+    }
+    .nav-right {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-right button {
+        width: 60%;
+        font-size: 8px;
+        padding: 5px 5px;
+        margin: 5px 0px;
+    }
+
+    .contact-heading {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .contact-blocks-container {
+        height: 180vh;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .contact-blocks {
+        height: 350px;
+        width: 70%;
+    }
+    .contact-blocks h3 {
+        font-size: 0.95rem;
+    }
+    .contact-blocks ul,form {
+        width: 85%;
+        line-height: 1.5rem;
+        font-size: 0.85rem;
+    }
+    .contact-blocks textarea {
+        height: 70px;
+        width: 100%;
+    }
+    .inp {
+        height: 20px;
+    }
+    .submit-btn {
+        margin-top: 10px;
+        font-size: 0.7rem;
+        padding: 7px 15px;
+    }
+
+    .map-container {
+        width: 100%;
+        padding: 0px 0px;
+    }
+    .map-container iframe {
+        height: 270px;
+        width: 90%;
+    }
+
+    footer {
+        height: 320px;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+    }
+    .footer-container {
+        height: 250px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        border: none;
+    }
+    .footer-blocks {
+        height: 120px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    footer img {
+        height: 50px;
+        width: 50px;
+    }
+    .footer-blocks h3 {
+        font-size: 10px;
+    }
+    .footer-blocks ul {
+        font-size: 0.5rem;
+        line-height: 1rem;
+        margin-top: 5px;
+    }
+    .footer-inp {
+        height: 16px;
+        width: 65%;
+        margin-top: 5px;
+    }
+    .footer-inp-btn {
+        font-size: 0.5rem;
+        padding: 5px 10px;
+        margin-top: 5px;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 768.98px) {
+    nav {
+        height: 60px;
+        display: flex;
+        justify-content: space-around;
+        justify-content: center;
+    }
+    .nav-left {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+    .nav-left ul {
+        font-size: 13px;
+        display: flex;
+    }
+    .nav-right {
+        width: 35%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        column-gap: 20px;
+    }
+    .nav-right button {
+        width: 30%;
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+
+    .contact-heading {
+        font-size: 15px;
+    }
+    .contact-blocks-container {
+        height: 170vh;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .contact-blocks {
+        height: 330px;
+        width: 60%;
+    }
+    .contact-blocks h3 {
+        font-size: 1rem;
+    }
+    .contact-blocks ul,form {
+        line-height: 1.5rem;
+        font-size: 0.9rem;
+        padding: 0px 20px;
+    }
+    .contact-blocks textarea {
+        height: 60px;
+    }
+    .inp {
+        height: 22px;
+    }
+    .submit-btn {
+        margin-top: 10px;
+        font-size: 0.75rem;
+        padding: 7px 15px;
+    }
+
+    .map-container {
+        width: 100%;
+        padding: 0px 0px;
+    }
+    .map-container iframe {
+        height: 280px;
+        width: 90%;
+    }
+
+    footer {
+        height: 350px;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+    }
+    .footer-container {
+        height: 300px;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        border: none;
+    }
+    .footer-blocks {
+        height: 130px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    footer img {
+        height: 60px;
+        width: 60px;
+    }
+    .footer-blocks h3 {
+        font-size: 13px;
+    }
+    .footer-blocks ul {
+        font-size: 0.7rem;
+        line-height: 1rem;
+        margin-top: 5px;
+    }
+    .footer-inp {
+        height: 20px;
+        width: 68%;
+        margin-top: 5px;
+    }
+    .footer-inp-btn {
+        font-size: 0.6rem;
+        padding: 8px 15px;
+        margin-top: 5px;
+    }
+}

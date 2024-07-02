@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <li><a href="index.html" class="a-style">Home</a></li>
+                    <li><a href="#" class="a-style">Pages</a></li>
+                    <li><a href="shop.html" class="a-style">Shop</a></li>
+                    <li><a href="#" class="a-style">Elements</a></li>
+                    <li><a href="blog.html" class="a-style">Blog</a></li>
+                    <li><a href="contact.html" class="a-style">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <button><a href="signup.html" class="a-style">Sign up</a></button>
+                <button><a href="login.html" class="a-style">Login</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="signup-container">
+            <div class="signup-block">
+                <h1>Sign Up</h1>
+                <form action="">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label for="name">Name</label></td>
+                                <td><input type="text" id="name" class="inp"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="password">Password</label></td>
+                                <td><input type="password" id="password" class="inp"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="gender">Gender</label></td>
+                                <td><input type="radio" name="gender" value="male"> Male <input type="radio" name="gender" value="female"> Female</td>
+                            </tr>
+                            <tr>
+                                <td><label for="hobbies">Hobbies</label></td>
+                                <td><input type="checkbox"> Music <input type="checkbox"> Football</td>
+                            </tr>
+                            <tr>
+                                <td><label for="message">Message</label></td>
+                                <td><textarea id="message" cols="35" rows="5"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><label for="country">Country</label></td>
+                                <td><select name="country" id="country" class="inp">
+                                    <option value="India">India</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="Nepal">Nepal</option>
+                                    <option value="China">China</option>
+                                </select></td>
+                            </tr>
+                            <tr>
+                                <td><label for="file">Upload File</label></td>
+                                <td><input type="file"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="submit" value="Sign Up" class="form-btn">&nbsp;&nbsp;<input type="reset" value="Reset" class="form-btn"></td>
+                            </tr>
+                            <tr class="login-ref">
+                                <td colspan="2"><p>Already have an account? <a href="login.html">Login</a></p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <img src="Image/icons/shopping.png" alt="shopping">
+        <div class="footer-container">
+            <div class="footer-blocks">
+                <h3>Category</h3>
+                <ul>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Accessories</li>
+                    <li>Shoe</li>
+                </ul>
+            </div>
+            <div class="footer-blocks">
+                <h3>Useful Link</h3>
+                <ul>
+                    <li>News & Tips</li>
+                    <li>About us</li>
+                    <li>Terms and Conditions</li>
+                    <li>Our Shop</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="footer-blocks">
+                <h3>Contact</h3>
+                <ul>
+                    <li>470B Ruecker Wall, <br>Kassandratwon Hi</li>
+                    <li>+(23212)2312323</li>
+                    <li>Shop@gmail.com</li>
+                    <li>
+                        <i class="fa-brands fa-facebook-f icon"></i>
+                        <i class="fa-brands fa-twitter icon"></i>
+                        <i class="fa-brands fa-google-plus-g icon"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-blocks block5">
+                <h3>News Letter</h3>
+                <ul>
+                    <li>470B Ruecker Wall,</li><li>Kassandratwon Hi<br> 975544</li>
+                        <li><input type="text" class="footer-inp">&nbsp;<input type="button" value="Subscribe" class="footer-inp-btn">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
